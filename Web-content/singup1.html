@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JOBS-IN/Sign-Up
+    </title>
+    <link rel="stylesheet" href="css\reg.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <style>
+         .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+}
+     </style>
+</head>
+<body>
+<!---------------------------------- Navigation bar --------------->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand"  href="#" style="size:18px;color:Yellow ;animation: animate 
+                  1.5s linear infinite;"><b>JOBS-IN</b></a>
+      </div>
+      <ul class="nav navbar-nav" style="margin-left:3%;">
+        <li ><a href="homepage1.jsp">Home</a></li>
+        <li><a href="Aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>      
+      <ul class="nav navbar-nav navbar-right" style="margin-right:2%;">
+        <li class="active"><a href="page.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="page1.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="wel">WELCOME TO RECRUITER SINGUP!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6" style="width:100%">
+                <form method="POST" action="signup1.jsp">
+                    <div class="img">
+                        <img src="image\p.png" alt="photo" height="15%" width="20%">
+                    </div>
+                    
+                    <div class='name'>             
+                    <input id="fname"class="nm" type="text" name = "first_name1" placeholder="First Name" size="60"  required>
+                    <input id="lname" class="nm" type="text" name = "last_name1" placeholder="Last Name" size="10"   required><br>
+
+                    <input id="email" type="email" name = "email1" placeholder="Email Id" size="30"   required><br>
+                    <input id="number" type="number" name = "mobileno1" placeholder="Phone Number" size="30"   required><br>
+
+                    <label class="gen"><b>Gender<input type="radio" id="male1" name="gender1" value="male" required>
+                    <label for="male" >Male</label>
+                    <input type="radio" id="female1" name="gender1" value="femal">
+                    <label for="female" >Female</label>
+                    <input type="radio" id="other1" name="gender1" value="other">
+                    <label for="other" >Other</label></b></label>                   
+                    <input id="password" type="password" name="epass1" id="password" placeholder="Password" size="30" required>
+                    <input id="cpassword" type="Password" name = "cpass1" id="cpass1" placeholder="Conform Password" size="30" required><br>
+                    <input type="checkbox" name="accept1" value="accept" required><label> I accept all the terms and condition</label><br>
+                <div >
+                    <input type="submit" value="Register" class="submit" name="submit">
+                </div> 
+                
+                </div>
+                <div>
+                    <p class="p"><b>Already a User?</b> <a class="login" href="login.html"><u><b>Login</b></u></a>&nbsp;  With US</p><br>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="C:\Users\kruti\OneDrive\Desktop\bootstrap-5.0.0-beta2-dist\js\jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="C:\Users\kruti\OneDrive\Desktop\bootstrap-5.0.0-beta2-dist\js\bootstrap.min.js"></script>
+    <!---voice recongnitation----->
+<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+<script >
+     
+     if (annyang) {
+       // Let's define our first command. First the text we expect, and then the function it should call
+       var commands = {
+        'enter first name *tag':function(variable){
+           let fname = document.getElementById("fname");
+           fname.value = variable.split(" ").join("");
+         },
+         'enter last name *tag':function(variable){
+           let lname = document.getElementById("lname");
+           lname.value = variable.split(" ").join("");
+         },
+         'enter email *tag':function(variable){
+           let email = document.getElementById("email");
+           email.value = variable.split(" ").join("");
+         },
+         'enter number *tag':function(variable){
+           let mobile = document.getElementById("number");
+           mobile.value = variable.split(" ").join("");
+         },
+         'enter password *tag':function(variable){
+           let pass = document.getElementById("password");
+           pass.value = variable.split(" ").join("");
+         },
+         'enter conform password *tag':function(variable){
+           let pass = document.getElementById("cpassword");
+           pass.value = variable.split(" ").join("");
+         },
+       };
+
+       // Add our commands to annyang
+       annyang.addCommands(commands);
+
+       // Start listening. You can call this here, or attach this call to an event, button, etc.
+       annyang.start();
+     }
+    </script>
+
+    <!-- ----------- --footer------------>
+<table class="container footer"  style="width:100%;color:white;">
+    <tr class="panel panel-default" style="background-color:black;">
+  <td class="panel-body">Copyright � 2021 Jobs-IN . All Rights Reserved .</td>
+    </tr>
+</table>
+
+
+</body>
+</html>

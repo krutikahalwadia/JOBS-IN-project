@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Contact Us Form</title>
+        <style>
+            body{
+                background-color:rgb(167, 128, 240) ;
+            }
+            form{
+            margin-left:20%;
+            margin-right:20%;
+            border-style:solid;
+            background-color: rgb(190, 184, 184);
+            border-radius:20px;
+            }
+            #title{
+                text-align:center
+                }
+            div{
+            margin-left:60px;
+            padding-bottom:10px;
+            font-size:larger;
+            }
+            h1{
+            color:blue}
+            label{
+                color: red;
+            }
+        </style>
+    </head>
+<body>
+    <form>
+        <div id="title">
+            <h1>Contact Us</h1>
+        </div>
+        <div id="name" >Name<label>*</label>:-
+            <input type="text" placeholder="First name"  size="20" style="font-size:15px;" required>
+            <input type="text" placeholder="Last name" size="20" style="font-size:15px;margin-left: 20%;" required>
+        </div>
+        <div id="email" >Email ID<label>*</label>:-
+            <input type="email" placeholder="abc@xyz.com" size="40" style="font-size:15px;" required>
+        </div>
+        <div id="ph">Phone Number<label>*</label>:-
+            <input type="number" placeholder="Phone number" size="10" style="font-size:15px;" required>
+        </div>
+        <div id="Gen">
+            <fieldset style="margin-right: 70px;">
+               <legend>Gender<label>*</label>:-</legend> 
+            <input type="radio" value="Female" name="g" required>Female
+            <input type="radio" value="male" name="g" required>Male
+            <input type="radio" value="other" name="g" required>Other
+            </fieldset>
+        </div>ō
+        <div id="cour">Course<label>*</label>:-
+            <select id="course" required>
+                <option value="#">--SELECT COURSE--</option>
+                <option value="MCA">MCA</option>
+                <option value="MBA">MBA</option>
+                <option value="BCA">BCA</option>
+                <option value="BBA">BBA</option>
+            </select>
+        </div>
+        <div id="JT" >Job Type<label>*</label>:-
+            <input type="radio" name="j" required>Internship
+            <input type="radio" name="j" required>Part-time
+            <input type="radio" name="j" required>Full-time
+        </div>
+        <div id="state" >City<label>*</label>:-
+            <input type="text" placeholder="City name" required style="font-size:15px;"> <p>State:-</label>
+            <input type="text" placeholder="State name" required style="font-size:15px;">
+        </div>
+        <div id="coun" >
+            Country<label>*</label>:-
+            <input type="text" placeholder="Country name" required style="font-size:15px;"><br>Pincode:- 
+            <input type="number" placeholder="e.g-440000" required style="font-size:13px;">
+        </div>
+        <div id="che">
+                <input type="checkbox" required >Accept terms and conditions.
+        </div>
+        <div id="butt" style="text-align: center;">
+            <input type="button" value="SUBMIT" style="font-size:large;">
+            <input type="button" value="CANCEL" style="font-size:large; " >
+        </div>
+    </form>
+</body>
+</html>

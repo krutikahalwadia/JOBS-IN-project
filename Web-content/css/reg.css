@@ -1,0 +1,175 @@
+
+body{ 
+    background-image:url('bgimage.png') ;
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+}
+@media all and (max-width:1200px) and (min-width: 900px)  {
+    form{
+            margin-top: 5px;
+            background-color:rgb(30, 147, 177,0.5);
+            margin-left: 10% !important;
+            margin-right:10% !important;
+            border-style:solid;
+            border-color: rgb(190, 184, 184);
+            border-style: double;
+            border-radius:15px;
+            
+            }}
+@media all and (max-width: 900px) and (min-width: 700px)  {
+    form{    margin-top: 5px;
+            background-color:rgb(30, 147, 177,0.5);
+            margin-left:5% !important;
+            margin-right:5% !important;
+            border-style:solid;
+            border-color: rgb(190, 184, 184);
+            border-style: double;
+            border-radius:15px;
+            
+            }}
+@media all and (max-width: 700px) and (min-width: 600px)  {
+    form{
+        margin-top: 5px;
+            background-color:rgb(30, 147, 177,0.5);
+            margin-left:10% !important;
+            margin-right:10% !important;
+            border-style:solid;
+            border-color: rgb(190, 184, 184);
+            border-style: double;
+            border-radius:15px;
+            
+            }}
+@media all and (max-width: 600px) and (min-width: 300px)  {
+form{       margin-top: 5px;
+        background-color:rgb(30, 147, 177,0.5);
+        margin-left:5% !important;
+        margin-right:5% !important;
+        border-style:solid;
+        border-color: rgb(190, 184, 184);
+        border-style: double;
+        border-radius:15px;
+        
+        }}
+        form{
+            background-color:rgb(30, 147, 177,0.5);
+            margin-left: 35%;
+            margin-right: 35%;
+            border-style:solid;
+            border-color: rgb(190, 184, 184);
+            border-style: double;
+            border-radius:15px;
+        }
+    .name{
+        margin-left:10%;
+        margin-right:5% ;
+         margin-top: 5%;
+       
+          font-size:20;
+    }
+    .wel{
+        
+        text-align: center;
+        font-size: 50px;
+        color:brown;
+    }
+    input[type="submit"]
+    {
+        font-size: larger;
+        border-radius: 15px;
+         margin-top: 20px; 
+         margin-left:5; 
+         width: 90%; 
+         background-color:cornflowerblue;
+         transition: all 0.5s;
+         margin-top: 5%;
+    }
+
+    input[type="submit"]:hover {
+    padding-right: 25px;
+    background-color:bisque;
+    cursor: pointer;
+    font-style:bolder;
+    }
+
+    input[type="submit"]:hover:after {
+    opacity: 1;
+    right: 0;
+    }
+    .nm
+    {
+        font-size: 25px;
+        border-radius: 10px;
+        width: 100%;
+    }
+    input[type="number"]{
+
+        font-size: 25px;
+        border-radius: 10px;
+        width: 90%; 
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    input[type="password"]{
+        font-size: 25px; 
+        border-radius: 10px;
+        width: 90%; 
+        margin-top: 5%;
+    }
+    input[type="email"]{
+        font-size: 25px;
+        border-radius: 10px;
+        width: 90%; 
+        margin-top: 5%;
+    }
+    input[type="checkbox"]{
+        margin-top:5%
+    }
+    img{
+        border-radius: 50%; 
+        margin-left: 40%;
+    }
+    .login{
+        margin-top: 10%;
+        color: rgb(64, 7, 138);
+        font-size: 20;
+    }
+    .forget{
+        color: blue; 
+        margin-left: 55%;
+        float:left;
+        margin-top: 2%;
+        width: 50%;
+
+    }
+    .singup{
+        color: rgb(204, 189, 223);
+        font-size: 20;
+    }
+    .p{
+        margin-left: 2%;
+        width: 90%;
+        margin-top: 15%;
+    }
+    .us{
+        font-size: 25px;
+        border-radius: 10px;
+        width: 90%;
+    }
+    .forget{
+        color: blue; 
+        margin-left: 55%;
+        float:left;
+        margin-top: 2%;
+        width: 50%;
+    }
+    .gen{
+        font-size:  18px;
+    }
+    .form{
+        margin-top: 5%;
+    }
+    .img{
+        font-size:18px;
+        color: white;
+    }

@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>JOBS-IN/Login Page
+</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="C:\Users\kruti\OneDrive\Desktop\bootstrap-5.0.0-beta2-dist\css\min.css">
+	<link rel="stylesheet" href="css\reg.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    .footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+}
+</style>
+</head>
+<body >
+
+
+<!---------------------------------- Navigation bar --------------->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand"  href="#" style="size:18px;color:Yellow ;animation: animate 
+                1.5s linear infinite;"><b>JOBS-IN</b></a>
+    </div>
+    <ul class="nav navbar-nav" style="margin-left:3%;">
+      <li ><a href="homepage1.jsp">Home</a></li>
+      <li><a href="Aboutus.html">About Us</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right" style="margin-right:2%;">
+      <li><a href="page.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li class="active"><a href="page1.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!---------------------------------- Form --------------->
+
+
+<script>
+  function validate(){
+  var username=document.form.id1.value;
+  var password=document.form.password1.value;
+  if(username==""){
+   alert("Enter Username!");
+    return false;
+  }
+  if(password==""){
+   alert("Enter Password!");
+    return false;
+  }
+  return true;
+  }
+  </script>
+
+    <p class="wel">WELCOME TO RECRUITER LOGIN!</p>
+    <div class="form">
+    	<form method="POST" action="login1.jsp" onsubmit="javascript:return validate();">
+     		<div class="img">
+        		<img src="image\p.png" alt="photo" height="15%" width="20%">
+     		</div>
+        	<div class='name'>
+	            <p ><br> <input class="us" type="text" name ="id1" placeholder="Mobile No" size="30" id="number"></p>
+		            <input class="us" type="password" name = "password1" placeholder="Password" size="30" id="password" > <br>
+					<input type="submit" value="Login" class="submit">
+	            <a class="forget" href="forgetpassword.html"><u>Forget Password?</u></a><br>        
+        	<div>
+           	 <p class="p"><b>New User?</b> <a class="login" href="page.html" ><u><b>Register</b></u></a>&nbsp;<b>With US</b></p><br>
+        	</div>
+    	</form>
+	</div>
+<script src="C:\Users\kruti\OneDrive\Desktop\bootstrap-5.0.0-beta2-dist\js\jquery.js"></script>  
+<script src="C:\Users\kruti\OneDrive\Desktop\bootstrap-5.0.0-beta2-dist\js\bootstrap.min.js"></script>
+  <!---voice recongnitation----->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+  <script >
+       
+       if (annyang) {
+         // Let's define our first command. First the text we expect, and then the function it should call
+         var commands = {
+           'enter number *tag':function(variable){
+             let number = document.getElementById("number");
+             number.value = variable.split(" ").join("");
+           },
+           'enter password *tag':function(variable){
+             let pass = document.getElementById("password");
+             pass.value = variable.split(" ").join("");
+           },
+         };
+ 
+         // Add our commands to annyang
+         annyang.addCommands(commands);
+ 
+         // Start listening. You can call this here, or attach this call to an event, button, etc.
+         annyang.start();
+       }
+      </script>
+
+<!-- ----------- --footer------------>
+<div class="container footer"  style="width:100%;color:white;">
+  <div class="panel panel-default" style="background-color:black;">
+  <div class="panel-body">Copyright � 2021 JOBS-IN . All Rights Reserved .</div>
+  </div>
+</div>
+
+</body>
+</html>

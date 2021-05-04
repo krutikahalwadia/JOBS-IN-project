@@ -1,0 +1,12 @@
+.dropdown-menu {
+    margin-left:1%; /* This has an effect */
+    background-color:black;
+}
+.dropdown-menu>a{
+  color:white;
+}
+.dropdown-menu a:hover {background-color:grey;}
+
+.dropdown:hover .dropdown-menu {display: block;}
+
+.dropbtn:hover {background-color:grey;}

@@ -1,0 +1,68 @@
+#search label {
+    position: absolute;
+    left: 17px;
+    top: 51px;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+   #search {
+    position: relative;
+    font-size: 18px;
+    padding-top: 40px;
+    margin: -20px auto 0;
+}
+#search #search-input, #search .hint {
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 23px;
+}
+.input-lg {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+.button{
+    height:51%;
+    position: absolute;
+    margin-left:86%;
+    margin-top: -3.6%;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: rgb(112, 179, 182);
+}
+.form-control {
+    display: block;
+    width: 85%;
+    padding: 6px 12px;
+    font-size: 19px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
